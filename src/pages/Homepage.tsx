@@ -13,6 +13,10 @@ const Homepage = () => {
     }
   }, [user, navigate]);
 
+  const handleNvigate = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <>
       <Header />
@@ -30,11 +34,17 @@ const Homepage = () => {
             our next generation family of multimodal generative AI models.
           </p>
 
-          <button
+          {/* <button
             onClick={signIn}
             className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg rounded-full shadow-lg hover:opacity-90 transition"
           >
             Sign in to Google AI Studio
+          </button> */}
+          <button
+            onClick={handleNvigate}
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg rounded-full shadow-lg hover:opacity-90 transition"
+          >
+            Google AI Studio
           </button>
         </div>
 
