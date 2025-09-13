@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "./MainHeader";
 
 const Homepage = () => {
-  const { user, signIn } = useAuth();
+  const { user } = useAuth();
   const navigate = useNavigate();
 
   React.useEffect(() => {
